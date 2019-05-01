@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: lungs
+    uniqueID: 1928839785
+    locked: 0
+  - name: bottom cardio
+    uniqueID: 3557245161
+    locked: 0
+  - name: small intestine
+    uniqueID: 482305187
+    locked: 0
+  - name: large intestine
+    uniqueID: 537537247
+    locked: 0
+  - name: digestion
+    uniqueID: 3904387325
+    locked: 0
+  - name: urinary
+    uniqueID: 1759036001
+    locked: 0
+  - name: top cardio
+    uniqueID: 238184801
+    locked: 0
+  - name: game over
+    uniqueID: 1195120497
+    locked: 0

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4807902256343450351}
-  - component: {fileID: 7418363814833952296}
   - component: {fileID: 1087651381347362167}
   m_Layer: 0
   m_Name: Large Intestine Part
@@ -31,26 +30,10 @@ Transform:
   m_Children:
   - {fileID: 1179869131586022166}
   - {fileID: 7066057186700441254}
-  - {fileID: 1194007247617759825}
   - {fileID: 8233482248053617889}
-  - {fileID: 8565201472281039068}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7418363814833952296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5999234296754704364}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d7305e8e8e0b641b8b9329ebcc6c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stercusMask: {fileID: 8233482248053617889}
-  stercusPosition: 0
 --- !u!114 &1087651381347362167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,170 +47,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputStercusMask: {fileID: 8233482248053617889}
-  outputStercusMask: {fileID: 8565201472281039068}
-  stercus: {fileID: 1194007247617759825}
+  outputStercusMask: {fileID: 0}
+  stercus: {fileID: 0}
   nextPart: {fileID: 0}
   maxContraction: 0.2
   squeezeOutSpeed: 9
   inputStercusVolume: 0
   outputStercusVolume: 0
---- !u!1 &6703814345572939003
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8565201472281039068}
-  - component: {fileID: 5240972601186395152}
-  m_Layer: 0
-  m_Name: output_stercus_mask
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8565201472281039068
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703814345572939003}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.52, y: 0.52, z: 0}
-  m_Children: []
-  m_Father: {fileID: 4807902256343450351}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!331 &5240972601186395152
-SpriteMask:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6703814345572939003}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 730729c1c0179d14eaab9b42c1ecfc10, type: 3}
-  m_MaskAlphaCutoff: 0.2
-  m_FrontSortingLayerID: -390579971
-  m_BackSortingLayerID: -390579971
-  m_FrontSortingLayer: 5
-  m_BackSortingLayer: 5
-  m_FrontSortingOrder: 9
-  m_BackSortingOrder: 5
-  m_IsCustomRangeActive: 1
-  m_SpriteSortPoint: 0
---- !u!1 &7289067439307397252
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1194007247617759825}
-  - component: {fileID: 2865172860933800781}
-  m_Layer: 0
-  m_Name: stercus
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1194007247617759825
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7289067439307397252}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.452, y: 0.452, z: 0}
-  m_Children: []
-  m_Father: {fileID: 4807902256343450351}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2865172860933800781
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7289067439307397252}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -390579971
-  m_SortingLayer: 5
-  m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: ecdf92b7e0d6c0c43afa446d7b375421, type: 3}
-  m_Color: {r: 0.3137255, g: 0.1764706, b: 0.08627451, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.46, y: 0.46}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
-  m_SpriteSortPoint: 0
 --- !u!1 &7942763728294947776
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +65,7 @@ GameObject:
   - component: {fileID: 8233482248053617889}
   - component: {fileID: 8057728584998372837}
   m_Layer: 0
-  m_Name: input_stercus_mask
+  m_Name: stercus_mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +83,7 @@ Transform:
   m_LocalScale: {x: 0.52, y: 0.52, z: 0}
   m_Children: []
   m_Father: {fileID: 4807902256343450351}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!331 &8057728584998372837
 SpriteMask:

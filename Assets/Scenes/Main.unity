@@ -1180,7 +1180,7 @@ MonoBehaviour:
   bloodCirculationPercentFallSpeed: 0.5
   oxygenPercentFallSpeed: 0.1
   waterPercentFallSpeed: 0.05
-  nutritionPercentFallSpeed: 0.03
+  nutritionPercentFallSpeed: 0.025
   drinkingSpeed: 0.5
 --- !u!4 &234701804
 Transform:
@@ -4530,54 +4530,6 @@ MonoBehaviour:
   body: {fileID: 234701803}
   leftLung: {fileID: 1009446541}
   rightLung: {fileID: 1667907410}
-  inhaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  exhaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   animationSpeed: 1
 --- !u!1001 &963277405
 PrefabInstance:
@@ -6710,13 +6662,8 @@ MonoBehaviour:
   contractionPosition: 31.52
   contractionRange: 2
   contractionSpeed: 10
-  maxContraction: 0.2
-  stercusPosition: 0
-  stercusLength: 3
   stercusMovementSpeed: 3
   parts: []
-  stercusPositions:
-  - 0
 --- !u!4 &1388346429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 199581020406623794, guid: f2f3a9b27b12ea845b4f9f50dabbc551,

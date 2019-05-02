@@ -1180,7 +1180,7 @@ MonoBehaviour:
   bloodCirculationPercentFallSpeed: 0.5
   oxygenPercentFallSpeed: 0.1
   waterPercentFallSpeed: 0.05
-  nutritionPercentFallSpeed: 0.025
+  nutritionPercentFallSpeed: 0.03
   drinkingSpeed: 0.5
 --- !u!4 &234701804
 Transform:

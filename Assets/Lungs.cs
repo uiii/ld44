@@ -12,16 +12,19 @@ public class Lungs : MonoBehaviour
 	public float animationSpeed = 1f;
 
 	protected bool isInhaling;
+	protected float flipTime;
 	protected float animationPercent;
 
 	void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.J)) {
 			isInhaling = true;
+			flipTime = Time.time;
 		}
 
 		if (Input.GetKeyUp(KeyCode.J)) {
 			isInhaling = false;
+			flipTime = Time.time;
 		}
 
 		var percentDelta = Time.deltaTime * animationSpeed;
@@ -42,8 +45,8 @@ public class Lungs : MonoBehaviour
 
 		var progress = animationPercent;
 
-		if (isInhaling && progress < 1f) {
-			body.oxygenPercent += percentDelta * 0.5f;
+		if ((isInhaling && progress < 1f) || progress > 0f) {
+			body.oxygenPercent += percentDelta * Mathf.Clamp01(Time.time - flipTime) * 0.5f;
 		}
 
 		leftLung.localScale = Vector3.Lerp(exhaledScale, inhaledScale, progress);

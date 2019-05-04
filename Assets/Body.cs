@@ -71,7 +71,7 @@ public class Body : MonoBehaviour
 
 		if (bloodCirculationPercent == 0 || oxygenPercent == 0 || waterPercent == 0 || nutritionPercent == 0) {
 			gameOver.SetActive(true);
-			gameOverTimeText.text = $"{Mathf.Round(Time.time)} seconds";
+			gameOverTimeText.text = $"{Mathf.Round(Time.timeSinceLevelLoad)} seconds";
 		}
 	}
 

@@ -45,7 +45,7 @@ public class Lungs : MonoBehaviour
 
 		var progress = animationPercent;
 
-		if ((isInhaling && progress < 1f) || progress > 0f) {
+		if ((isInhaling && progress < 1f) || (!isInhaling && progress > 0f)) {
 			body.oxygenPercent += percentDelta * Mathf.Clamp01(Time.time - flipTime) * 0.5f;
 		}
 
